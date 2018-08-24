@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> </title>
+    </head>
+
+    <body>
+
+      <!-- Headline here -->
+      <div class="grid">
+        <div class="header">
+          <h1>Marriot Hotel - Paris, France</h1>
+        </div>
+        <div class="navigation">
+          <a href="#"><h2>Home|</h2> </a>
+          <a href="#"><h2>Location|</h2> </a>
+          <a href="#"><h2>Contact</h2></a>
+        </div>
+
+
+        <!-- Background info here -->
+        <div class="section1">
+          <p><strong> The Renaissance Paris Vendome Hotel is committed to providing you with the vacation of a lifetime.
+            We're perfectly situated in the heart of France's capital city, steps away from a vast assortment of
+             world-class boutiques in the shopping district and only one block from Place Vendome; we're also a
+             short distance from the Louvre Museum, the Paris Opera and Place de la Concorde. All of our beautifully
+              appointed, spacious hotel rooms showcase sophisticated boutique touches and a wide range of contemporary
+              amenities like marble bathrooms, luxury bedding, robes and slippers and 24-hour room service.</strong></p>
+
+              <video controls preload="" src="sailing.mp4" poster="" style="width:410px;height:290px;" autoplay></video>
+        </div>
+
+
+            <!-- Form here -->
+            <script>
+                  function validateForm() {
+              var x = document.forms["myForm"]["fname"].value;
+              if (x == "") {
+                  alert("Name must be filled out");
+                  return false;
+              }
+                }
+            </script>
+
+
+        <div class="section2">
+
+          <div class="tester">
+
+            <h1> Bookings for 2018 </h1><br>
+          <form name="myForm" onsubmit="return validateForm()" method="post">
+            <label for="fname">Name</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Your name.."><br>
+
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
+            <label for="arrival">Arrival</label><br>
+            <input type="date" id="arrival" name="arrival" placeholder="Your name.."><br>
+
+            <label for="departure">Departure</label><br>
+            <input type="date" id="departure" name="departure" placeholder="">
+
+            <input type="submit" value="Check Availabilty">
+          </form>
+        </div>
+        </div>
+
+
+        <!-- Footer here -->
+        <div class="footer">
+         &copy; Marriot Hotel - Paris, France</div>
+        </div>
+
+    </body>
+
+
+</html>
